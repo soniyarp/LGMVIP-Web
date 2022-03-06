@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Diplomata&display=swap" rel="stylesheet">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calc.css">
+	<script src="calc.js"></script>
+</head>
+
+<body>
+	<h3>My Calculator</h3>
+
+	<div class="calc">
+		<header id="screen"></header>
+		<table>
+
+			<tbody >
+				<tr class="keypad">
+					<td class="btn" id="AC" onclick="clearScr()">AC</td>
+					<td class="btn"  onclick="sendNum('*0.01')">%</td>
+					<td class="btn" onclick="sendNum('/')">/</td>
+				</tr>
+				<tr class="keypad">
+					<td class="btn" onclick="sendNum('+')">+</td>
+					<td class="btn" onclick="sendNum('-')">-</td>
+					<td class="btn"  onclick="sendNum('*')">x</td>
+				</tr>
+				<tr>
+					<td class="btn"  onclick="sendNum('1')">1</td>
+					<td class="btn" onclick="sendNum('2')">2</td>
+					<td class="btn" onclick="sendNum('3')">3</td>
+				</tr>
+				<tr>
+					<td class="btn" onclick="sendNum('4')">4</td>
+					<td class="btn" onclick="sendNum('5')">5</td>
+					<td class="btn" onclick="sendNum('6')">6</td>
+				</tr>
+				<tr>
+					<td class="btn" onclick="sendNum('7')">7</td>
+					<td class="btn" onclick="sendNum('8')">8</td>
+					<td class="btn" onclick="sendNum('9')">9</td>
+				</tr>
+				<tr>
+					<td class="btn" onclick="sendNum('.')">.</td>
+					<td class="btn" onclick="sendNum('0')">0</td>
+					<td class="btn" onclick="equalTo()">=</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
